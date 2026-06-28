@@ -118,6 +118,7 @@ ErrorCode = Literal[
     "interaction_failed",    # could not complete the goal within turn cap
     "timeout",               # wall-clock cap hit
     "vlm_unavailable",       # all vision providers refused or 503'd
+    "driver_unavailable",    # cua-driver not found or failed
 ]
 
 

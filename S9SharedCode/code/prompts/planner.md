@@ -41,6 +41,11 @@ Available skills:
                      across multiple sources. Do NOT use when the
                      answer lives in one specific site's interactive
                      listing — that is what Browser exists for.
+  computer           Controls native desktop applications using CUA driver.
+                     PREFER this when the query asks to automate native desktop
+                     applications like Calculator, Notepad, VS Code, etc.
+                     metadata MUST set: goal (str), app (str, name of app to launch),
+                     and task_type (str, "hotkey" | "ax" | "electron" | "vision").
 
 ALWAYS insert a `distiller` node between Browser and Formatter when
 the user wants structured fields per item (a list of model_name +
